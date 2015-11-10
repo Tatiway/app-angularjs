@@ -1,0 +1,153 @@
+.contactContainer{
+	margin-top: 100px;
+}
+.contactContainer input{
+	width: 350px;
+	padding: 10px;
+	margin: 15px 15px 15px 0;
+	border: 2px solid #ccc;
+}
+.button{
+	width: 350px;
+	padding: 10px;
+	margin-top: 10px;
+}
+/*bootstrap*/
+
+.navbar {
+  border-radius: 0px !important;
+  margin-bottom: 0px !important;
+}
+.containerJambotron .jumbotron{
+	background-image: url('../img/website/road.png');
+	max-height: 496px;
+	overflow: hidden;
+}
+.containerJambotron .jumbotron h1{
+	color: #fff;
+	text-align: right;
+	text-shadow: black 0.3em 0.3em 0.3em;
+}
+.containerJambotron .jumbotron p{
+	color: #fff;
+	text-align: right;
+}
+.formContainer{
+	margin-top: 50px;
+}
+
+.thumbnail{
+	overflow: hidden;
+}
+
+/*home*/
+
+.itemContainer{
+	height: 500px;
+	overflow: hidden;
+	display: block;
+	margin-bottom:20px; 
+	/*padding: 5px;*/
+	/*border: 1px solid red;*/
+}
+.itemContainer .item{
+	/*margin: 5px;*/
+	border: 1px solid #ccc;
+	padding: 10px;
+}
+.itemContainer img{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	
+}
+
+
+/*footer:;*/
+.containerFooter {
+	margin-top: 200px;
+
+}
+.containerFooter p {
+	color:#ccc;
+	text-align: center;
+
+}
+
+
+/*story-ditale*/
+.storyDitale img{
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+/*form*/
+/*
+.contactContainer input.ng-invalid{
+
+	border: 2px solid red;
+	
+}
+.contactContainer input.ng-invalid-required{
+
+	border: 2px solid #ccc;
+	
+}*/
+
+.formContainer input.ng-invalid{
+
+	border: 1px solid red;
+}
+.formContainer textarea.ng-invalid{
+
+	border: 1px solid red;
+}
+.formContainer input.ng-invalid-required{
+	
+	border: 1px solid #ccc;
+}
+.formContainer textarea.ng-invalid-required{
+	
+	border: 1px solid #ccc;
+}
+.formContainer span{
+	font-size: 12px ;
+	color: red;
+}
+
+/*about me*/
+
+
+.photowrap img{
+	 float: left;
+	 margin: 0 20px 20px 0;
+	
+}
+
+
+/*photos*/
+
+.photos-s li{
+	width: 31.3%;
+	list-style: none;
+	float: left;
+	margin: 5px;
+	overflow: hidden;
+	text-align: center;
+}
+
+.photo img{
+	height: 320px;	
+	transition:all .3s ease;
+}
+
+.photo img:hover{
+	transform: scale(1.1);
+	z-index: 3;
+	
+}
+.button_wrap{
+	text-align: center;
+	margin-top: 50px;
+}
+

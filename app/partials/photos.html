@@ -1,0 +1,27 @@
+<div class="photoswrap">
+	<div class="container">
+
+		<div class="row">
+			<h1>Photos</h1>
+			<hr>
+		</div>
+
+
+		<div class="row">
+			<div class="photos">
+
+			<ul class="photos-s">
+				<li class="photo" ng-repeat="photo in photos | limitTo:numPhotos "><img src="{{photo.img}}" alt="{{photo.alt}}"></li>
+			</ul>
+			</div>
+		</div>
+		<div class="row">
+			<div class="button_wrap">
+				<a href="" class="button" ng-click="showPhotos()" ng-show="check">Показать еще фото</a>
+			</div>
+			
+		</div>
+
+
+	</div>
+</div>

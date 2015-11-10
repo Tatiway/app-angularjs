@@ -1,0 +1,33 @@
+<div class="containerJambotron">
+  <div class="jumbotron">
+    <div class="container" >
+      <h1>"Life begins here ..."</h1>
+      <p> Voluptatibus deleniti facilis.  Eligendi mollitia ipsam illo dolorem!</p>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 col-md-12">
+     <h1>New article</h1>
+   </div>
+ </div>
+ <div class="row">
+  <div class="article" ng-repeat="story in stories | filter:raitingFilter | limitTo:3 ">
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail">
+        <img src="{{story.thumbnail}}" alt="{{story.title}}">
+        <div class="caption">
+          <h3>{{story.title}}</h3>
+          <p>{{story.description}}</p>
+          <p>data: {{story.date}}</p>
+          <p>country: {{story.country}}</p>
+          <p>country: {{story.status}}</p>
+          <p><a href="#/{{story.id}}"  role="button">Read more...</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+

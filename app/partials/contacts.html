@@ -1,0 +1,91 @@
+<div class="container">
+	<div class="formContainer">
+		<div class="row">
+			<div class="col-md-12">
+				<h1>Contacts</h1>
+				<hr>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+				<form name="frm" novalidate>
+					<div class="form-group">
+						<label for="exampleInputName">Name</label>
+						<input type="text" name="name" class="form-control" id="exampleInputName" placeholder="Name" ng-model="user.name" required
+						ng-maxlength="30" ng-minlength="2">
+						<span ng-show="frm.name.$dirty && frm.name.$error.required">Required!</span>
+						<span ng-show="frm.name.$dirty && frm.name.$error.maxlength">Your name is too long!</span>
+						<span ng-show="frm.name.$dirty && frm.name.$error.minlength">It is too little for a name!</span>
+					</div>
+					<div class="form-group">
+						<label for="exampleInputEmail1">Email address</label>
+						<input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Email" ng-model="user.email" required>
+						<span ng-show="frm.email.$dirty && frm.email.$error.required">Required!</span>
+						<span ng-show="frm.email.$dirty && frm.email.$error.email">It is not email!</span>
+					</div>
+					<div class="form-group">
+						<label for="exampleTextarea">Your text</label>
+						<textarea class="form-control" rows="3" placeholder="Your text" name="text" ng-model="user.text" required
+						ng-maxlength="100" ng-minlength="2"></textarea>
+						<span ng-show="frm.text.$dirty && frm.text.$error.required">Required!</span>
+						<span ng-show="frm.text.$dirty && frm.text.$error.maxlength">Your message is too long!</span>
+						<span ng-show="frm.text.$dirty && frm.text.$error.minlength">It is too little for a message!</span>
+					</div>
+
+					<button ng-disabled="frm.$invalid" type="submit" class="btn btn-default" ng-click="sendMessage(user)">Submit</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+<!-- <div class="container">
+<div class="row">
+	<div class="col-md-12">
+		<div class="contactContainer">
+			<h1>Contact</h1>
+			<hr>
+			<form name="frm">
+
+			<div class="dataName">
+			<label>Name</label><br>
+			<input type="text" 
+						 name="name" 
+						 ng-model="user.name" 
+						 required 
+						 ng-minlength="2"
+						 ng-maxlength="30"
+			>
+			<span ng-show="frm.name.$dirty && frm.name.$error.required">Required!</span>
+			<span ng-show="frm.name.$dirty && frm.name.$error.minlength">It is too little for a name!</span>
+			<span ng-show="frm.name.$dirty && frm.name.$error.maxlength">Your name is too long!</span>
+			</div>	
+
+			<div class="dataEmail">
+			<label>E-mail</label><br>
+			<input type="email" name="email" ng-model="user.email" required>
+			<span ng-show="frm.email.$dirty && frm.email.$error.required">Required!</span>
+			<span ng-show="frm.email.$dirty && frm.email.$error.email">It is not e-mail!</span>
+			</div>
+
+			<div class="dataText">
+			<label>Your text</label><br>
+			<textarea name="text"  cols="50" rows="5"></textarea>
+				
+			</div>
+			<button ng-disabled="frm.$invalid" class="btn btn-default">Send</button>
+
+			
+
+			</form>
+
+
+		</div>
+
+	</div>
+</div>
+</div> -->

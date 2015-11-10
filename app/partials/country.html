@@ -1,0 +1,24 @@
+<div class="container">
+<div class="row">
+	<div class="col-md-12">
+		<h1>{{orderCounrty}}</h1>
+		<hr>
+	</div>
+</div>
+<div class="row">
+<div class="article" ng-repeat="country in countries | filter:{country:orderCounrty}  ">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <a href="#/{{country.id}}"><img src="{{country.thumbnail}}" alt="{{country.title}}"></a>
+      <div class="caption">
+        <a href="#/{{country.id}}"><h3>{{country.title}}</h3></a>
+        <p>{{country.description}}</p>
+        <p>data: {{country.date}}</p>
+        <p>country: {{country.country}}</p>
+        <p>country: {{country.status}}</p>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+</div>
